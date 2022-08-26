@@ -17,6 +17,7 @@ public class ShowStudent extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Student> allStudent = StudentDao.getAllStudent();
 
+        String a = "test_for_github";
         req.setAttribute("students", allStudent);
         req.getRequestDispatcher("show-student.jsp").forward(req, resp);
     }
