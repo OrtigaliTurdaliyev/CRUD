@@ -18,7 +18,6 @@ public class ShowStudent extends HttpServlet {
         List<Student> allStudent = StudentDao.getAllStudent();
 
         String a = "test_for_github";
-        String a_master = "test_for_github for master";
         req.setAttribute("students", allStudent);
         req.getRequestDispatcher("show-student.jsp").forward(req, resp);
     }
